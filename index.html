@@ -5,9 +5,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/output.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="prism.css" />
   </head>
-  <body>
-    <h1 class="text-2xl font-bold underline text-sky-600">Hello world!</h1>
+  <body class="bg-bg-primary">
+    <div class="grid grid-cols-12 h-screen bg-bg-primary">
+      <div
+        class="border-r border-line flex flex-col gap-5 justify-end items-center pb-10"
+      >
+        <a class="w-fit" href="https://github.com/citseOfficial" target="_blank"
+          ><i class="text-4xl text-white bx bxl-github hover:text-slate-300"></i
+        ></a>
+        <a
+          class="w-fit"
+          href="https://www.instagram.com/citse_official/"
+          target="_blank"
+          ><i
+            class="text-4xl text-white bx bxl-instagram hover:text-slate-300"
+          ></i
+        ></a>
+      </div>
+      <div class="grid grid-rows-8 grid-flow-col col-span-11">
+        <div class="border-b border-line row-span-2 m-10"></div>
+        <div class="row-span-5">
+          <pre
+            class="border border-line"
+          ><code class="language-java line-numbers">var i = 1</code></pre>
+        </div>
+        <div class="flex justify-center items-center bg-bg-primary-live">
+          <div
+            class="bg-bg-primary border-2 rounded-[4px] px-5 py-3 m-5 font-extrabold border-[#ffffff] w-fit cursor-pointer text-[#ffffff] text-base hover:bg-[#ffffff] hover:text-line"
+          >
+            <a class="" href="">GENERAR ARQ. ⌘ + ⏎</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
-  <script type="module" src="main.js"></script>
+  <script src="prism.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <script src="main.js"></script>
 </html>
