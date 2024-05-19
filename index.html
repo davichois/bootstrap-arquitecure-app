@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title></title>
+    <title>Bootstrap Arquitecture</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/output.css" rel="stylesheet" />
@@ -28,18 +28,194 @@
           ></i
         ></a>
       </div>
-      <div class="grid grid-rows-8 grid-flow-col col-span-11">
-        <div class="border-b border-line row-span-2 m-10"></div>
-        <div class="row-span-5">
-          <pre
-            class="border border-line"
-          ><code class="language-java line-numbers">var i = 1</code></pre>
+      <div class="col-span-11">
+        <div id="basic" class="grid grid-rows-8 grid-flow-col h-full w-full">
+          <div class="border-b border-line row-span-2 mx-10 my-5"></div>
+          <div class="row-span-5 grid grid-cols-12 gap-2">
+            <div
+              class="border-r border-line col-start-1 col-span-5 px-10 flex flex-col gap-5"
+            >
+              <div class="flex flex-col w-full h-fit gap-2">
+                <h4 class="text-white font-semibold">Proyecto</h4>
+                <form class="flex gap-5 flex-wrap">
+                  <div>
+                    <input type="radio" id="opcion1" name="grupo1" value="1" />
+                    <label for="opcion1" class="text-white font-medium"
+                      >Gradle - Groovy</label
+                    >
+                  </div>
+
+                  <div>
+                    <input type="radio" id="opcion2" name="grupo1" value="2" />
+                    <label for="opcion2" class="text-white font-medium"
+                      >Maven</label
+                    >
+                  </div>
+                </form>
+              </div>
+              <div class="flex flex-col w-full h-fit gap-2">
+                <h4 class="text-white font-semibold">Spring Boot</h4>
+                <form class="flex gap-5 flex-wrap">
+                  <div>
+                    <input type="radio" id="opcion1" name="grupo1" value="1" />
+                    <label for="opcion1" class="text-white font-medium"
+                      >3.3.0 (SNAPSHOT)</label
+                    >
+                  </div>
+
+                  <div>
+                    <input type="radio" id="opcion2" name="grupo1" value="2" />
+                    <label for="opcion2" class="text-white font-medium"
+                      >3.3.0 (RC1)</label
+                    >
+                  </div>
+
+                  <div>
+                    <input type="radio" id="opcion3" name="grupo1" value="3" />
+                    <label for="opcion3" class="text-white font-medium"
+                      >3.2.6 (SNAPSHOT)</label
+                    >
+                  </div>
+                  <div>
+                    <input type="radio" id="opcion4" name="grupo1" value="3" />
+                    <label for="opcion4" class="text-white font-medium"
+                      >3.2.5</label
+                    >
+                  </div>
+
+                  <div>
+                    <input type="radio" id="opcion5" name="grupo1" value="3" />
+                    <label for="opcion5" class="text-white font-medium"
+                      >3.1.12 (SNAPSHOT)</label
+                    >
+                  </div>
+                </form>
+              </div>
+              <div class="flex flex-col w-full h-fit gap-2">
+                <h4 class="text-white font-semibold">Metadatos</h4>
+                <form class="flex gap-5 flex-wrap px-5">
+                  <div class="flex justify-center items-center w-full">
+                    <p class="mr-5 text-gray-200 text-sm font-light w-15">
+                      Grupo
+                    </p>
+                    <input
+                      type="text"
+                      value="com.example"
+                      class="appearance-none bg-bg-primary text-sm border-b-2 border-gray-500 py-2 w-full max-w-full text-white leading-tight focus:outline-none focus:border-gray-300"
+                    />
+                  </div>
+
+                  <div class="flex justify-center items-center w-full">
+                    <p class="mr-5 text-gray-200 text-sm font-light w-15">
+                      Artefacto
+                    </p>
+                    <input
+                      type="text"
+                      value="demo"
+                      class="appearance-none bg-bg-primary text-sm border-b-2 border-gray-500 py-2 w-full max-w-full text-white leading-tight focus:outline-none focus:border-gray-300"
+                    />
+                  </div>
+                  <div class="flex justify-center items-center w-full">
+                    <p class="mr-5 text-gray-200 text-sm font-light w-15">
+                      Nombre
+                    </p>
+                    <input
+                      type="text"
+                      value="demo"
+                      class="appearance-none bg-bg-primary text-sm border-b-2 border-gray-500 py-2 w-full max-w-full text-white leading-tight focus:outline-none focus:border-gray-300"
+                    />
+                  </div>
+                  <div class="flex justify-center items-center w-full">
+                    <p class="mr-5 text-gray-200 text-sm font-light w-15">
+                      Paquete
+                    </p>
+                    <input
+                      type="text"
+                      class="appearance-none bg-bg-primary text-sm border-b-2 border-gray-500 py-2 w-full max-w-full text-white leading-tight focus:outline-none focus:border-gray-300"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div
+              class="border-line col-start-6 col-span-7 flex flex-col h-full w-full px-8"
+            >
+              <div class="flex flex-row justify-between items-center w-full">
+                <p class="text-[#ffffff] text-base font-semibold">
+                  Requermientos funcionales
+                </p>
+                <div
+                  id="new-requirement"
+                  class="bg-bg-primary border-2 flex rounded-[4px] px-7 py-3 m-3 font-normal border-[#ffffff] w-fit cursor-pointer text-[#ffffff] text-xs hover:bg-[#ffffff] hover:text-line"
+                >
+                  <p class="mr-1 font-bold">NUEVO RQMT.</p>
+                  <p class="ml-1 font-normal">CTRL + R</p>
+                </div>
+              </div>
+              <div class="py-8 flex flex-row items-center cursor-pointer">
+                <p class="mr-5 text-gray-500 text-sm font-extrabold">#001</p>
+                <input
+                  type="text"
+                  class="appearance-none bg-bg-primary border-b-2 border-gray-500 py-2 w-full max-w-full text-white leading-tight focus:outline-none focus:border-gray-300"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center bg-bg-primary-live">
+            <div
+              id="generate-arquitecture"
+              class="bg-bg-primary border-2 flex rounded-[4px] px-7 py-3 m-3 border-[#ffffff] w-fit cursor-pointer text-[#ffffff] text-sm hover:bg-[#ffffff] hover:text-line"
+            >
+              <p class="mr-1 font-bold">GENERAR ARQ.</p>
+              <p class="ml-1 font-normal">CTRL + ⏎</p>
+            </div>
+          </div>
         </div>
-        <div class="flex justify-center items-center bg-bg-primary-live">
+        <div
+          id="structure"
+          class="grid grid-rows-8 grid-flow-col h-full w-full gap-2 hidden"
+        >
+          <div class="row-start-1 row-end-8 grid grid-cols-12 gap-4">
+            <div class="col-start-2 col-end-5 flex flex-col">
+              <div class="border border-line mt-5 mb-2 rounded-[2px] p-2.5">
+                <h1 class="text-base font-semibold text-white">demo.zip</h1>
+              </div>
+              <div
+                id="fileSystem"
+                class="border border-line mb-5 rounded-[2px] h-full w-full min-w-fit"
+              ></div>
+            </div>
+            <div class="col-start-5 col-end-12 my-5 flex flex-col">
+              <div class="flex justify-end items-center hidden">
+                <div
+                  class="bg-bg-primary border rounded-[4px] px-3 py-2 mb-5 font-normal border-[#ffffff] w-fit cursor-pointer text-[#ffffff] text-xs hover:bg-[#ffffff] hover:text-line"
+                >
+                  <strong class="" href="">Descargar Archivo</strong>
+                </div>
+              </div>
+              <div class="border border-line bg-[#15191A] h-full rounded-[2px]">
+                <pre><code class="language-java line-numbers">var i = 1</code></pre>
+              </div>
+            </div>
+          </div>
           <div
-            class="bg-bg-primary border-2 rounded-[4px] px-5 py-3 m-5 font-extrabold border-[#ffffff] w-fit cursor-pointer text-[#ffffff] text-base hover:bg-[#ffffff] hover:text-line"
+            class="row-start-8 flex justify-center items-center bg-bg-primary-live"
           >
-            <a class="" href="">GENERAR ARQ. ⌘ + ⏎</a>
+            <div
+              id="dowload-arquitecture"
+              class="bg-bg-primary border-2 flex rounded-[4px] px-7 py-3 m-3 font-normal border-[#ffffff] w-fit cursor-pointer text-[#ffffff] text-sm hover:bg-[#ffffff] hover:text-line"
+            >
+              <p class="mr-1 font-bold">DESCARGAR</p>
+              <p class="ml-1 font-normal">CTRL + ⏎</p>
+            </div>
+
+            <div
+              id="close-dowload"
+              class="bg-bg-primary border-2 flex rounded-[4px] px-7 py-3 m-3 font-normal border-[#ffffff] w-fit cursor-pointer text-[#ffffff] text-sm hover:bg-[#ffffff] hover:text-line"
+            >
+              <p class="mr-1 font-bold">CANCELAR</p>
+              <p class="ml-1 font-normal">ESC</p>
+            </div>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         "bg-primary": "#1B1F23",
         "bg-primary-live": "#262A2D",
-        "line": "#4A5053",
+        line: "#4A5053",
       },
     },
   },
